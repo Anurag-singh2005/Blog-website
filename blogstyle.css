@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(159, 227, 204);
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    width:90vw; 
+    padding: 2rem 1rem;
+    margin:auto;
+   
+}
+a{
+    text-decoration: none;
+}
+.header_container{
+    margin:1rem;
+}
+.header_title{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.header_description{
+    font-size: 1rem;
+    max-width: 500px;
+   text-align: center;
+    margin:0 auto;
+    color: #441616;
+}
+.maincontainer{
+    display:grid;
+    gap:1.5rem;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 360px));
+    justify-content: center;
+}
+/* @media (max-width: 992px){
+    .maincontainer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 768px){
+    .maincontainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px){
+    .maincontainer{
+        grid-template-columns: 1fr;
+    }
+} */
+
+.cardcontainer{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(83, 75, 75);
+    border-radius: 10px;
+    background-color: rgba(203, 184, 184, 0.598);
+}
+.image_container{
+    position:relative;
+    height:12rem;
+    overflow: hidden;   
+}
+.car_image{
+    border-radius:10px ;
+    object-fit: cover;
+    /* object-position: center; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.card_titleContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.cardcontainer:hover .car_image{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+.card_title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    color: #2c1212;
+}
+.card_title:hover{
+    color:rgb(40, 40, 184);
+    border-radius:10px;
+}
+.cardBody{
+    font-size: 1rem;
+    color: rgb(83, 76, 76);
+}
+.footercontainer{
+    display: flex;
+    justify-content: space-between;
+}
+.authorinfo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.smallimage img{
+    border-radius: 3rem;
+    margin-left: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.author_name_date{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: left;
+}
+.author_name{
+    font-size: 1rem;
+    color:rgb(27, 27, 224)
+}
+.date{
+    font-size: 0.8rem;
+    color: rgb(70, 53, 53);
+}
+.card_tag_container{
+    font-size: 1rem;
+    border:1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin:2rem
+}
+.buton{
+    padding: 0.2rem 0.5rem;
+    
+}
